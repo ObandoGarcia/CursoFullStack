@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Productos en el almacén</h1>
-        <a href="index.html"><button>Regresar a inicio</button></a>
+        <a href="index.html"><button style="width: 150px;" class="btn-Regresar"><img src="icons/cerrar-sesion.png" alt="Imagen-regresar"> Regresar a inicio</button></a>
     </header>
-    <section>
-        <form action="respuesta.html" method="post" >
+    <main class="caja-centro">
+      <section>
+        <form action="respuesta.html" method="post" class="formulario">
           <fieldset>
             <legend>Registro de producto</legend><hr>
             <label for="codigo">Codigo</label>
@@ -37,11 +39,14 @@
               <option value="categoria3">Categoria 3</option>
             </select>
           </fieldset>
-          <button type="reset">Limpiar</button>    
+          <button type="reset"><img src="icons/bote-de-basura.png" alt="Imagen-limpiar"> Limpiar</button>    
         </form>
-        <a href="respuesta.html"><button>Guardar</button></a>
-        <a href="index.html"><button>Cancelar</button></a>
-    </section>
-    <footer></footer>
+        <a href="respuesta.html"><button><img src="icons/agregar.png" alt="Imagen-agregar"> Guardar</button></a>
+        <a href="index.html"><button><img src="icons/claro.png" alt="Imagen-cancelar"> Cancelar</button></a>
+      </section>
+    </main>
+    <footer>
+      <p>Jose Manuel Obando - 2023</p>
+    </footer>
 </body>
 </html>

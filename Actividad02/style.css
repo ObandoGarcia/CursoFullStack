@@ -1,3 +1,20 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.caja-centro{
+  width: 80%;
+  margin: auto;
+  padding: 25px;
+}
+
+button{
+  width: 85px;
+  height: 45px;
+  border-radius: 10px;
+}
 /*Estilos para la tabla en general*/
 table, th, td{
   border: 1px solid black;
@@ -14,3 +31,56 @@ th{
 }
 
 /*Estilos para la pagina de producto*/
+.formulario{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario input {
+  width:250px;
+  height: 30px;
+  margin: 10px;
+  border-color: black;
+}
+
+label{
+  text-align: right;
+  display: inline-block;
+  width: 100px;
+
+}
+
+section a{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+select{
+  margin: 5px;
+  padding: 5px;
+}
+
+fieldset{
+  width: 400px;
+  border-color: black;
+}
+
+.btn-Agregar{
+  background-color: rgb(65, 150, 69);
+}
+
+.btn-Editar{
+  background-color: rgb(49, 63, 194);
+}
+
+.btn-Eliminar{
+  background-color: rgb(194, 34, 34);
+}
+
+.btn-Regresar{
+  background-color: rgb(28, 181, 201);
+}
