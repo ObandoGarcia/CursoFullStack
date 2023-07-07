@@ -11,7 +11,36 @@
         <a href="index.html"><button>Regresar a inicio</button></a>
     </header>
     <section>
-
+        <form action="respuesta.html" method="post" >
+          <fieldset>
+            <legend>Registro de producto</legend><hr>
+            <label for="codigo">Codigo</label>
+            <input type="text"><br>
+            <label for="descripcion">Descripción</label>
+            <input type="text"><br>
+            <label for="codigo-barra">Codigo de barra</label>
+            <input type="text"><br>
+            <label for="precio">Precio</label>
+            <input type="text"><br>
+            <label for="stock">Stock</label>
+            <input type="text"><br>
+            <label for="proveedor">Proveedor</label>
+            <input type="text"><br>
+            <label for="estado">Estado</label>
+            <label for="estado-activo">
+              <input type="checkbox" value="activo">Activo
+            </label><br>
+            <label for="categoria">Categoria</label>
+            <select name="selecion-categoria">
+              <option value="categoria1" selected>Categoria 1</option>
+              <option value="categoria2">Categoria 2</option>
+              <option value="categoria3">Categoria 3</option>
+            </select>
+          </fieldset>
+          <button type="submit">Guardar</button>
+          <button type="reset">Limpiar</button>      
+        </form>
+        <a href="index.html"><button>Cancelar</button></a>
     </section>
     <footer></footer>
 </body>
