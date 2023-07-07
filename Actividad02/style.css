@@ -1,0 +1,16 @@
+/*Estilos para la tabla en general*/
+table, th, td{
+  border: 1px solid black;
+  border-collapse: collapse;  
+}
+
+/*Estilos de las celdas*/
+th, td{
+  padding: 10px;
+}
+
+th{
+  text-align: left;
+}
+
+/*Estilos para la pagina de producto*/
