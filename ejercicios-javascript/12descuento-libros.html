@@ -1,25 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Descuento de libros</title>
     <script>
-        let precio = Number(prompt("Ingrese el precio total de su compra: "))
-        let cantidad = Number(prompt("Ingrese el numero de libros de su compra: "))
+        let precio = parseFloat(prompt("Ingrese el precio total de su compra: "))
+        let cantidad = parseFloat(prompt("Ingrese el numero de libros de su compra: "))
+        let total, descuento = 0;
 
         if(cantidad < 3){
             alert("No tiene descuento")
         }else if(cantidad == 3){
-            alert("EL total a pagar es: " + (precio - (precio*0.03)))
+            descuento = precio * 0.03;
+            console.log(descuento);
+            total = precio - descuento;
+            alert("El precio a cancelar es: " + total);
         }else if(cantidad > 3) {
-            alert("El total a pagar es: " + (precio - (precio*0.05)))
+            descuento = precio * 0.05;
+            console.log(descuento);
+            total = precio - descuento;
+            alert("El precio a cancelar es: " + total);
         }else if(cantidad >= 10){
-            let total = precio - (precio * 0.01)
-            alert("El total a pagar es: " + total)
+            descuento = precio * 0.1;
+            console.log(descuento);
+            total = precio - descuento;
+            alert("El precio a cancelar es: " + total);
         }else{
             alert("Fuera de rango")
         }
+   
     </script>
 </head>
 <body>

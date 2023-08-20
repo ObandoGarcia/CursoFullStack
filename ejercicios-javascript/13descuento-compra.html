@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descuento segun monto de compra</title>
+    <script>    
+        let compra = Number(prompt("Ingrese monto de la compra: "));
+        let descuento = 0.0, totalPagar;
+
+        if(compra >= 0 &&compra <= 500){
+            descuento = 0;
+            alert("No tiene descuento")
+        }else if(compra >= 500.01 && compra <= 1000){
+            descuento = compra * 0.05;
+            console.log(descuento);
+            totalPagar = compra - descuento;
+            alert("El valor del descuento es: $" + descuento + "\nY el valor total a pagar es: $" + totalPagar);
+        }else if(compra >= 1000.01 && compra <= 7000){
+            descuento = compra * 0.11;
+            console.log(descuento);
+            totalPagar = compra - descuento;
+            alert("El valor del descuento es: $" + descuento + "\nY el valor total a pagar es: $" + totalPagar);
+        }else if(compra >= 7000.01 && compra <= 15000){
+            descuento = compra * 0.18;
+            console.log(descuento);
+            totalPagar = compra - descuento;
+            alert("El valor del descuento es: $" + descuento + "\nY el valor total a pagar es: $" + totalPagar);
+        }else if(compra > 15000){
+            descuento =compra * 0.25;
+            console.log(descuento);
+            totalPagar = compra - descuento;
+            alert("El valor del descuento es: $ " + descuento + "\nY el valor total a pagar es: $" + totalPagar);
+        }else{
+            alert("Ha salido del rango permitido");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
