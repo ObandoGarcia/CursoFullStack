@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vector simple</title>
+    <script>
+        let numeros = [], numero, total = 0;
+
+        for(let i = 0; i <= 19; i++){
+            do{
+                numero = Number(prompt("Ingrese un numero positivo: "));
+            }while(numero < 0);
+
+            numeros.push(numero);
+        }
+        
+        //Numeros contenidos dentro del vector
+        console.log(numeros);
+
+        //Valor mas alto
+        numeros.sort(function(a, b){
+            return b - a;
+        });
+
+        console.log("El valor mas alto es: " + numeros[0]);
+
+        //El valor mas bajo
+        numeros.sort(function(a, b){
+            return a - b;
+        })
+
+        console.log("El valor mas bajo es: " + numeros[0]);
+
+        //Suma de valores de la matriz
+        for(let i of numeros) total += i;
+        console.log("La suma de los numeros dentro de la matriz es: " + total);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasificacion de angulos</title>
+    <script>
+        let angulo;
+
+        do{
+            angulo = Number(prompt("Ingrese el valor del angulo a clasificar: "));
+        }while(angulo < 0 || angulo > 181);
+
+        if(angulo < 90){
+            alert("El angulo ingresado es un Angulo agudo");
+        }else if(angulo == 90){
+            alert("El angulo ingresado es un Angulo Recto");
+        }else if(angulo > 90 && angulo < 180){
+            alert("El angulo ingresado es un Angulo obtuso");
+        }else if(angulo == 180){
+            alert("El angulo ingresado es un Angulo llano");
+        }else{
+            alert("Ha salido del rango permitido");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

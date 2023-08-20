@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de salario</title>
+    <script>
+        let salario, horasTrabajadas, descuentoSeguroSocial, pagoTotal;
+        const valorHora = 1.75;
+        
+        do{
+            horasTrabajadas = Number(prompt("Ingrese el numero de horas trabajdas esta semana: "))
+        }while(horasTrabajadas < 0);
+
+        if(horasTrabajadas >= 40){
+            salario =  horasTrabajadas * valorHora;
+            descuentoSeguroSocial = salario * 0.0945;
+            console.log(descuentoSeguroSocial);
+            pagoTotal = salario - descuentoSeguroSocial;
+            alert("Tu pago sera de: $ " + pagoTotal);
+        }else if(horasTrabajadas < 40){
+            salario =  horasTrabajadas * valorHora;
+            descuentoSeguroSocial = salario * 0.15;
+            console.log(descuentoSeguroSocial);
+            pagoTotal = salario - descuentoSeguroSocial;
+            alert("Tu pago sera de: $ " + pagoTotal);
+        }else{
+            alert("Has ingresado valores que no corresponden a los solicitados.")
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
