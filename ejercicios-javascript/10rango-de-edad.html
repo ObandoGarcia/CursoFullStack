@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang=es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rango de edad</title>
+    <script>
+        let edad;
+
+        do{
+            edad = Number(prompt("Ingrese su edad en numero"));
+        }while(edad < 1 || edad > 110);
+
+        if(edad <= 12){
+            alert("Eres un NINO");
+        }else if(edad > 12 && edad < 18){
+            alert("Eres un ADOLESCENTE");
+        }else if(edad >= 18 && edad < 60){
+            alert("Eres ADULTO");
+        }else if(edad >= 60 && edad <= 110){
+            alert("Eres de la TERCERA EDAD");
+        }else{
+            alert("Tu edad no se encuentra registrada, acaso eres immortal?");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

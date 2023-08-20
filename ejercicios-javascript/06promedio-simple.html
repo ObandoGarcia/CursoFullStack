@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promedio de estudiantes</title>
+    <script>
+        let nota, acumulador = 0;
+       
+        for(let i = 1; i <= 10; i++){
+            do{
+                nota = Number(prompt("Ingrese nota de estudiante: "+ i))
+            }while(nota < 0 || nota > 10)
+
+            acumulador += nota;         
+        }
+
+        alert("El promedio de las notas ingresadas es: " + (acumulador/10));
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
